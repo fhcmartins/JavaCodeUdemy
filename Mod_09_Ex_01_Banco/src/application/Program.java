@@ -29,32 +29,24 @@ public class Program {
 		 * os dados da conta após cada operação.
 		 */
 		
-<<<<<<< HEAD
 		Locale.setDefault(Locale.US); 
 		Scanner sc = new Scanner(System.in);
 		 		 
-=======
-		 Scanner sc = new Scanner(System.in);
-		 Locale.setDefault(Locale.US);
-		 
->>>>>>> eec9fb52425faf9ce7393f5f334efa14917d5ee4
 		 //instanciando conta
 		 Account account;
 		 
 		 System.out.print("Enter account number: ");
-<<<<<<< HEAD
 		 int accountNumber = sc.nextInt();
 		 sc.nextLine();
 		 System.out.print("Enter account holder: ");
 		 String accountOwner = sc.nextLine();
 		 System.out.print("Is there an initial deposit (y/n)? ");
-=======
 		 int number = sc.nextInt();
 		 sc.nextLine();
 		 System.out.print("Enter account holder: ");
 		 //String holder = sc.nextLine();
 		 System.out.println("Is there an initial deposit (y/n)? ");
->>>>>>> eec9fb52425faf9ce7393f5f334efa14917d5ee4
+
 		 char response = sc.next().charAt(0);
 		 sc.nextLine();
 		 
@@ -66,7 +58,6 @@ public class Program {
 		 else {
 			 account = new Account(accountNumber, accountOwner);
 		 }
-<<<<<<< HEAD
 		 
 		 //Mostrando na tela os dados da conta
 		 System.out.println();
@@ -89,13 +80,10 @@ public class Program {
 		 System.out.println("Updated account data: ");
 		 System.out.println(account);
 		 
-=======
-		 
 		 //Mostrando na tela os dados da conta
 		 System.out.println();
 		 System.out.println("Account data: ");
 		 
->>>>>>> eec9fb52425faf9ce7393f5f334efa14917d5ee4
 		 sc.close();
 	}
 		

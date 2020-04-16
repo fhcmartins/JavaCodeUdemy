@@ -1,26 +1,16 @@
 package entities;
 
 public class Account {
-<<<<<<< HEAD
 	
 	private int accountNumber;
 	private String accountOwner;
 	private double balance;
-=======
-	public int accountNumber;
-	public String accountOwner;
-	public double balance;
->>>>>>> eec9fb52425faf9ce7393f5f334efa14917d5ee4
 
 	public Account(int accountNumber, String accountOwner) {
 		this.accountNumber = accountNumber;
 		this.accountOwner = accountOwner;
 	}
-<<<<<<< HEAD
 
-=======
-	
->>>>>>> eec9fb52425faf9ce7393f5f334efa14917d5ee4
 	public Account(int accountNumber, String accountOwner, double initialDeposit) {
 		this.accountNumber = accountNumber;
 		this.accountOwner = accountOwner;
