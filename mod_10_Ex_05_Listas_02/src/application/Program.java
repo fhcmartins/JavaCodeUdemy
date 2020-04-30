@@ -15,21 +15,22 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		
 		//Lista
-		List<Employee> list = new ArrayList();
+		List<Employee> list = new ArrayList<>();
 		
 		//Inserindo dados
 		
 		//Lento um numero inteiro N
 		System.out.print("How many employees will be registered? ");
 		int n = sc.nextInt();
-		sc.nextLine();
 		
 		//Inserindo informacoes de acordo com N
-		System.out.println();
 		for(int i = 1; i <= n; i++) {
+			System.out.println();
 			System.out.println("Employee #" + i + ":");
+			
 			System.out.print("Id: ");
 			int id = sc.nextInt();
+			
 			//Verificando repeticao de Id
 			while(hasId(list, id)) {
 				System.out.println("Id already taken. Try again: ");
@@ -37,7 +38,7 @@ public class Program {
 			}
 			
 			System.out.print("Name: ");
-			sc.hasNextLine();
+			sc.nextLine();
 			String name = sc.nextLine();
 			System.out.print("Salary: ");
 			double salary = sc.nextDouble();
@@ -53,6 +54,9 @@ public class Program {
 		Employee emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		
 		if(emp == null) {
+			System.out.println("This id does not exist!");
+		}
+		else {
 			System.out.print("Enter the percentage: ");
 			double percentage = sc.nextDouble();
 			emp.increaseSalary(percentage);
