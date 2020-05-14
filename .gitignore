@@ -1,9 +1,13 @@
 .metadata/
 bin/
 tmp/
+*.class
 *.tmp
 *.bak
 *.swp
+*.jar
+*.war
+*.ear
 *~.nib
 local.properties
 .settings/
