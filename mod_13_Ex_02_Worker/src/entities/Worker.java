@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
 
-import entities.enums.WorkLevel;
+import entities.enums.WorkerLevel;
 
 public class Worker {
 	
 	// Atributos básicos
 	private String name;
-	private WorkLevel level;
+	private WorkerLevel level;
 	private Double baseSalary;
 	
 	// Associacoes
@@ -31,7 +31,8 @@ public class Worker {
 	}
 	
 	// Construtor
-	public Worker(String name, WorkLevel level, Double baseSalary) {
+	// Não serão marcados no construtor atributos que são lista
+	public Worker(String name, WorkerLevel level, Double baseSalary, Department department) {
 		this.name = name;
 		this.level = level;
 		this.baseSalary = baseSalary;
@@ -47,11 +48,11 @@ public class Worker {
 		this.name = name;
 	}
 	
-	public WorkLevel getLevel() {
+	public WorkerLevel getLevel() {
 		return level;
 	}
 	
-	public void setLevel(WorkLevel level) {
+	public void setLevel(WorkerLevel level) {
 		this.level = level;
 	}
 	

@@ -1,6 +1,6 @@
 package entities.enums;
 
-public enum WorkLevel {
+public enum WorkerLevel {
 	
 	// Declaracao dos valores dos tipos enumerados
 	JUNIOR,
